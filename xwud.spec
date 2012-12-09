@@ -1,6 +1,6 @@
 Name:		xwud
-Version:	1.0.3
-Release:	%mkrel 2
+Version:	1.0.4
+Release:	%mkrel 1
 Summary:	Image displayer for X
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -35,3 +35,17 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %{_bindir}/xwud
 %{_mandir}/man1/xwud.*
+
+
+
+
+%changelog
+
+* Fri Jun 08 2012 tv <tv> 1.0.4-1.mga3
++ Revision: 257345
+- new release
+
+* Sun Jan 23 2011 pterjan <pterjan> 1.0.3-1.mga1
++ Revision: 35159
+- imported package xwud
+
