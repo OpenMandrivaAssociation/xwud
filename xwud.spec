@@ -1,11 +1,10 @@
 Name:		xwud
 Version:	1.0.4
-Release:	%mkrel 1
+Release:	2
 Summary:	Image displayer for X
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
-BuildRoot:	%{_tmppath}/%{name}-root
 
 BuildRequires: pkgconfig(x11) >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
