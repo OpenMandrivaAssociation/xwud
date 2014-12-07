@@ -1,6 +1,6 @@
 Name:		xwud
 Version:	1.0.4
-Release:	8
+Release:	9
 Summary:	Image displayer for X
 Group:		Development/X11
 Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
