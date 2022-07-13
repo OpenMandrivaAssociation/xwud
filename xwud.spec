@@ -1,9 +1,9 @@
 Name:		xwud
-Version:	1.0.5
-Release:	2
+Version:	1.0.6
+Release:	1
 Summary:	Image displayer for X
 Group:		Development/X11
-Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source:		http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.xz
 License:	MIT
 
 BuildRequires: pkgconfig(x11) >= 1.0.0
@@ -18,17 +18,13 @@ dump file, such as produced by xwd.
 %setup -q -n %{name}-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
+%configure	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-rm -rf %{buildroot}
-%makeinstall_std
-
-%clean
-rm -rf %{buildroot}
+%make_install
 
 %files
 %defattr(-,root,root)
