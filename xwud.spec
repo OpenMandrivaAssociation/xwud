@@ -1,5 +1,5 @@
 Name:		xwud
-Version:	1.0.7
+Version:	1.0.8
 Release:	1
 Summary:	Image displayer for X
 Group:		Development/X11
